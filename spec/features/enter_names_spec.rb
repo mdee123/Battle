@@ -1,5 +1,4 @@
 require 'capybara/rspec'
-require 'capybara/dsl'
 
 # As two Players,
 # So we can play a personalised game of Battle,

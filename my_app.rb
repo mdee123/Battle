@@ -17,6 +17,7 @@ class MyApp < Sinatra::Base
   get '/play' do
     @player_1_name = session[:player_1_name]
     @player_2_name = session[:player_2_name]
+    @player_2_points = 
     erb :play
   end
   run! if app_file == $0
