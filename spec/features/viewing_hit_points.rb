@@ -4,8 +4,8 @@
 
 feature 'View hit points' do
   scenario 'player 2\'s hit points' do
-    visi('')
-    expect(page).to have_content 'Player 2: 100 points'
+    visit('')
+    expect(page).to have_content 'Player 2: 100 points.'
   end
 
 end
