@@ -7,7 +7,6 @@ feature 'attack player' do
   scenario 'confirm attack' do
     sign_in_and_play
     click_button 'Attack'
-    visit('/attack')
     expect(page).to have_content "#{player} has attacked Mittens"
   end
 
@@ -17,7 +16,6 @@ feature 'attack player' do
   scenario 'reduce HP' do
     sign_in_and_play
     click_button 'Attack'
-    visit('/attack')
     expect(page).to have_content "#{player2} now has 90 points"
   end
 end

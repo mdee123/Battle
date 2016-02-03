@@ -16,16 +16,14 @@ class MyApp < Sinatra::Base
   get '/play' do
     @player_name = $player.name
     @player2_name = $player2.name
-    @player2_points = $player.points
+    @player2_points = $player2.points
     erb :play
   end
 
   get '/attack' do
-    @player_name = $player.name
-    @player2_name = $player2.name
-    @player2_points = $player2.points
-    @player2_points -= 10
-    p "in controller"
+    @player = $player
+    @player2 = $player2
+    @player.attack(@player2)
     erb :attack
   end
   run! if app_file == $0
