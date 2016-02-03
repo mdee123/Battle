@@ -1,3 +1,4 @@
+
 feature 'attack player' do
   let(:player) { 'Dave' }
   let(:player2) { 'Mittens'}

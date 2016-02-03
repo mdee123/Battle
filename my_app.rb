@@ -23,7 +23,7 @@ class MyApp < Sinatra::Base
   get '/attack' do
     @player = $player
     @player2 = $player2
-    @player.attack(@player2)
+    Game.new.attack(@player2)
     erb :attack
   end
   run! if app_file == $0
