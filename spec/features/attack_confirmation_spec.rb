@@ -19,4 +19,5 @@ feature 'attack player' do
     click_button 'Attack'
     expect(page).to have_content "#{player2} now has 90 points"
   end
+
 end
