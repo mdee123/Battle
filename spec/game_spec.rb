@@ -14,9 +14,9 @@ require 'game'
   end
 
   describe '#switch_player' do
-    it 'switches to player 2' do
-      game.attack(player2)
-      expect(game.switch_player).to eq false
+    it 'switches player' do
+      game.switch_player
+      expect(game.current_player).to eq player2
     end
   end
 

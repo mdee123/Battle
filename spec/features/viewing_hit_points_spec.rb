@@ -7,6 +7,6 @@ require 'capybara/rspec'
 feature 'View hit points' do
   scenario 'player 2\'s hit points' do
     visit('/play')
-    expect(page).to have_content '100 points.'
+    expect(page).to have_content '90 points.'
   end
 end
