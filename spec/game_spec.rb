@@ -2,7 +2,7 @@
 require 'game'
 
   describe Game do
-    subject(:game) {described_class.new}
+    subject(:game) {described_class.new(player, player2)}
     let(:player) {double :player}
     let(:player2) {double :player}
 
