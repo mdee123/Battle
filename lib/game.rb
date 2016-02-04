@@ -3,9 +3,9 @@ class Game
 
   attr_reader :player, :player2
 
-  def initialize(player = Player.new, player2 = Player.new)
+  def initialize(player, player2)
     @player = player
-    @player = player2
+    @player2 = player2
   end
 
   def attack(player)
